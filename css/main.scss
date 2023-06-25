@@ -1,0 +1,149 @@
+// ## Colors
+
+// ### Primary
+
+$Very_dark_blue_main_background: hsl(233, 47%, 7%);
+$Dark_desaturated_blue_card_background: hsl(244, 38%, 16%);
+$Soft_violet_accent: hsl(277, 64%, 61%);
+
+// ### Neutral
+
+$White_main_heading_stats: hsl(0, 0%, 100%);
+$Slightly_transparent_white_main_paragraph: hsla(0, 0%, 100%, 0.75);
+
+$Slightly_transparent_white_stat_headings: hsla(0, 0%, 100%, 0.6);
+$font-size_paragrph: 1.5rem;
+
+$font-inter: "Inter", sans-serif;
+$font-lexend: "Lexend Deca", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: $Very_dark_blue_main_background;
+
+
+}
+main{
+    width: 85%;
+   height: 100%;
+margin: 70px auto;
+
+max-width: 350px;
+min-width: 300px;
+
+
+
+.section-img--header{
+    width: 100%;
+
+
+ img{
+    width: 100%;
+    border-radius: 10px 10px 0 0 ;
+    filter: invert(34%) sepia(73%) saturate(150%) hue-rotate(233deg) brightness(80%) contrast(250%);
+      
+}
+
+   }
+.section-card--body{
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 100%;
+height: auto;
+background-color: $Dark_desaturated_blue_card_background;
+color: $White_main_heading_stats;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 20px;
+border-radius:  0 0 10px 10px ;
+
+h1{
+    font-family: $font-inter;
+    font-size: 3rem;
+    margin-top: 20px;
+    span{
+        color: $Soft_violet_accent;
+    }
+}
+p{
+    color: $Slightly_transparent_white_main_paragraph;
+    font-size: $font-size_paragrph;
+    font-family: $font-inter;
+    font-weight: 400;
+    line-height: 25px;
+    padding: 20px 10px;
+}
+div{
+    p{
+        color: white;
+        font-size: 2rem;
+        font-family: $font-inter;
+        font-weight: bold;
+        padding: 10px;
+    }
+    span{
+        font-size: 1.1rem;
+        color: $Slightly_transparent_white_main_paragraph;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+}
+}
+}
+@media(min-width:1440px){
+    main{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 1200px;
+        height: 450px;
+        max-width: none;
+        .section-img--header{
+            width: 50%;
+            height: 450px;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 0 10px 10px 0 ;
+            }
+        }
+
+      .section-card--body{
+        width: 50%;
+        text-align: left;
+       justify-content: space-evenly;
+        padding: 60px 60px 60px 40px;
+       
+        border-radius:10px 0 0 10px ;
+        h1{
+            margin-top: 20px;
+            line-height: 45px;
+        }
+        p{
+            margin-top: 20px;
+            padding: 0px 80px 0px 0px;
+            margin-bottom: 20px;
+        }
+        .div-metrics{
+            width: 100%;
+                   display: flex;
+            flex-direction: row;
+            justify-content:flex-start;
+            margin-top: 20px;
+            p{
+                margin-right: 50px;
+            }
+        }
+      }
+       
+    }
+}
+
